@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Rafael Sicat Purisima</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="RSPproject.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&family=Caveat:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="projects-page">
+
+    <div class="cursor-quill" id="cursor"></div>
+    <div id="dust-container"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit;">R.S.P</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html#about" data-text="About">About</a></li>
+            <li><a href="index.html#skills" data-text="Skills">Skills</a></li>
+            <li><a href="RSPprojects.html" data-text="Projects" class="nav-active">Projects</a></li>
+            <li><a href="RSPcreative.html" data-text="Creative">Creative</a></li>
+            <li><a href="index.html#contact" data-text="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <header class="page-header">
+        <div class="header-ruled-lines"></div>
+        <div class="header-margin"></div>
+        <div class="page-header-content">
+            <p class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Projects</p>
+            <div class="header-stamp">
+                <span>Portfolio</span>
+            </div>
+            <h1 class="page-title">The Work</h1>
+            <p class="page-subtitle">A complete catalogue of projects, experiments & endeavours</p>
+            <div class="ornament-line"><span>✦</span></div>
+            <p class="page-meta">
+                <span class="meta-tag">14 Projects</span>
+                <span class="meta-dot">·</span>
+                <span class="meta-tag">Various Disciplines</span>
+                <span class="meta-dot">·</span>
+                <span class="meta-tag">2024 — 2026</span>
+            </p>
+        </div>
+    </header>
+
+    <!-- ==================== FILTER BAR ==================== -->
+    <div class="filter-bar">
+        <span class="filter-label">Filter by:</span>
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="gamedev">Game Dev</button>
+        <button class="filter-btn" data-filter="media">Media</button>
+        <button class="filter-btn" data-filter="development">Development</button>
+    </div>
+
+    <!-- ==================== PROJECTS GRID ==================== -->
+    <main class="projects-main">
+        <div class="projects-full-grid" id="projectsGrid">
+
+            <!-- Project 1 -->
+            <article class="proj-card" data-tags="frontend backend design" data-index="0">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#3b2314;--grad-b:#6b4a2e;">
+                        <span class="proj-roman">I</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">01</div>
+                        <h2 class="proj-title">DBrands Minimart</h2>
+                        <p class="proj-short">A full-featured e-commerce minimart with product listings, cart system, and checkout flow.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS</span>
+                            <span class="ptag">JavaScript</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="0">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="proj-card" data-tags="frontend backend design" data-index="1">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#1e3a2f;--grad-b:#2d6a4f;">
+                        <span class="proj-roman">II</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tr"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">02</div>
+                        <h2 class="proj-title">AeroVision</h2>
+                        <p class="proj-short">Real-time aviation data visualised through an elegant, API-driven interface.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">API</span>
+                            <span class="ptag">Database</span>
+                            <span class="ptag">Frontend</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="1">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="proj-card" data-tags="gamedev design" data-index="2">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#2a1a3e;--grad-b:#4a2d6b;">
+                        <span class="proj-roman">III</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">03</div>
+                        <h2 class="proj-title">2D Mini Game</h2>
+                        <p class="proj-short">A 2D pixel adventure built in Unity — character design, world-building, and mechanics from scratch.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Game Dev</span>
+                            <span class="ptag">Unity</span>
+                            <span class="ptag">Animation</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="2">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="proj-card" data-tags="design frontend" data-index="3">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#3b1a1a;--grad-b:#7a3535;">
+                        <span class="proj-roman">IV</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tr"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">04</div>
+                        <h2 class="proj-title">UX/UI Design</h2>
+                        <p class="proj-short">Figma-first design systems, wireframes, and high-fidelity prototypes that communicate before a word is typed.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Figma</span>
+                            <span class="ptag">CSS</span>
+                            <span class="ptag">Canva</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="3">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="proj-card" data-tags="Media" data-index="4">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#1a2e3b;--grad-b:#2d5a7a;">
+                        <span class="proj-roman">V</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">05</div>
+                        <h2 class="proj-title">Interactive Storytelling</h2>
+                        <p class="proj-short">Narrative-driven web experiences where every click unfolds a new chapter of the story.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">UX</span>
+                            <span class="ptag">Narrative</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="4">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="proj-card" data-tags="frontend" data-index="5">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#1a2a1a;--grad-b:#2d5a35;">
+                        <span class="proj-roman">VI</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tr"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">06</div>
+                        <h2 class="proj-title">Yarah Consultancy</h2>
+                        <p class="proj-short">A professional consultancy web presence — secure, polished, and built for trust.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Frontend</span>
+                            <span class="ptag">API</span>
+                            <span class="ptag">Security</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="5">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="proj-card" data-tags="frontend design" data-index="4">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#555B6E;--grad-b:#89B0AE;">
+                        <span class="proj-roman">VII</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">07</div>
+                        <h2 class="proj-title">Clash of Clans</h2>
+                        <p class="proj-short">A website inspired by the popular game Clash of Clans, created as a first-year web development project.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="6">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article class="proj-card" data-tags="media" data-index="7">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#D282A6;--grad-b:#6E4555;">
+                        <span class="proj-roman">VIII</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">08</div>
+                        <h2 class="proj-title">Commercial Ad Project</h2>
+                        <p class="proj-short">A commercial ad focusing on planning, filming, and visual composition, to achieve a polished video.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Video Editing</span>
+                            <span class="ptag">Production</span>
+                            <span class="ptag">Filming</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="7">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 9 -->
+            <article class="proj-card" data-tags="research ai education" data-index="8">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#553739;--grad-b:#955E42;">
+                        <span class="proj-roman">IX</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">09</div>
+                        <h2 class="proj-title">Research Paper</h2>
+                        <p class="proj-short">Examining how AI tools influence the credibility, and quality of projects in Creative Computing.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Research</span>
+                            <span class="ptag">AI</span>
+                            <span class="ptag">Academic Study</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="8">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 10 -->
+            <article class="proj-card" data-tags="gamedev design" data-index="9">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#0b1a2a;--grad-b:#1f3b5c;">
+                        <span class="proj-roman">X</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">10</div>
+                        <h2 class="proj-title">Space Shooter Game</h2>
+                        <p class="proj-short">An arcade-style space shooter game built with p5.js where players control a spaceship, dodge enemies, and survive waves of incoming attacks.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">p5.js</span>
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">Game Development</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="9">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 11 -->
+            <article class="proj-card" data-tags="media" data-index="10">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#434a2a;--grad-b:#7a9a4f;">
+                        <span class="proj-roman">XI</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">11</div>
+                        <h2 class="proj-title">Stop Motion Animation</h2>
+                        <p class="proj-short">A stop motion animation project created using frame-by-frame photography to bring static objects to life.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Animation</span>
+                            <span class="ptag">Stop Motion</span>
+                            <span class="ptag">Video Editing</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="10">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 12 -->
+            <article class="proj-card" data-tags="development" data-index="11">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#411b26;--grad-b:#ff3a4a;">
+                        <span class="proj-roman">XII</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">12</div>
+                        <h2 class="proj-title">Performance Prediction</h2>
+                        <p class="proj-short">A machine learning model designed to predict student academic performance using behavioral and educational data.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Machine Learning</span>
+                            <span class="ptag">AI</span>
+                            <span class="ptag">Data Analysis</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="11">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+             <!-- Project 13 -->
+            <article class="proj-card" data-tags="development" data-index="12">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#411b38;--grad-b:#ef3aff;">
+                        <span class="proj-roman">XIII</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">13</div>
+                        <h2 class="proj-title">Smartphone App</h2>
+                        <p class="proj-short">A Smartphone app develop in Android Studio inspired by digital time capsule for your thoughts, dreams.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">UX/UI</span>
+                            <span class="ptag">Kotlin</span>
+                            <span class="ptag">Android Studio</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="12">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 13 -->
+            <article class="proj-card" data-tags="development" data-index="13">
+                <div class="proj-card-inner">
+                    <div class="proj-visual" style="--grad-a:#413e1b;--grad-b:#ff893a;">
+                        <span class="proj-roman">XIV</span>
+                        <div class="proj-visual-overlay"></div>
+                    </div>
+                    <div class="proj-tape proj-tape--tl"></div>
+                    <div class="proj-info">
+                        <div class="proj-number-small">14</div>
+                        <h2 class="proj-title">Code lab 2</h2>
+                        <p class="proj-short">A Code lab 2 project for dynamic movie database powered by real-time data.</p>
+                        <div class="proj-tags-row">
+                            <span class="ptag">Code lab 2</span>
+                            <span class="ptag">Python</span>
+                            <span class="ptag">UX/UI</span>
+                        </div>
+                        <button class="proj-open-btn" data-project="13">Open Project →</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- ==================== PROJECT MODAL ==================== -->
+    <div class="modal-backdrop" id="modalBackdrop">
+        <div class="modal-paper" id="modalPaper">
+            <div class="modal-ruled-lines"></div>
+            <div class="modal-margin-line"></div>
+
+            <button class="modal-close" id="modalClose">✕</button>
+
+            <div class="modal-header">
+                <div class="modal-stamp" id="modalStamp"></div>
+                <span class="modal-number" id="modalNumber"></span>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-tagline" id="modalTagline"></p>
+                <div class="ornament-line"><span>✦</span></div>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-visual-area" id="modalVisual">
+                    <span class="modal-roman" id="modalRoman"></span>
+                </div>
+
+                <div class="modal-details">
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">✦ Overview</h3>
+                        <p class="modal-desc" id="modalDesc"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">✦ The Process</h3>
+                        <p class="modal-process" id="modalProcess"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">✦ Technologies</h3>
+                        <div class="modal-tech-grid" id="modalTech"></div>
+                    </div>
+
+                    <!-- ✦ Screenshots -->
+                    <div class="modal-section" id="modalScreenshotsSection">
+                        <h3 class="modal-section-title">✦ Glimpse</h3>
+                        <div class="modal-screenshots-grid" id="modalScreenshots"></div>
+                    </div>
+
+                    <!-- ✦ Walkthrough Video -->
+                    <div class="modal-section" id="modalVideoSection">
+                        <h3 class="modal-section-title">✦ Walkthrough</h3>
+                        <div class="modal-video-embed">
+                            <iframe id="modalVideoEmbed" src="" title="Project Walkthrough"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <a href="modalGithub" class="modal-link-btn" id="modalGithub" target="_blank" rel="noopener noreferrer">✦ View on GitHub</a>
+                        <a href="modalLive" class="modal-link-btn modal-link-btn--secondary" id="modalLive" target="_blank" rel="noopener noreferrer">✦ View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation between projects -->
+            <div class="modal-nav">
+                <button class="modal-nav-btn" id="modalPrev">← Previous</button>
+                <span class="modal-nav-count" id="modalCount"></span>
+                <button class="modal-nav-btn" id="modalNext">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox (place just before </body>) -->
+    <div class="modal-lightbox" id="modalLightbox">
+        <button class="modal-lightbox-close" id="lightboxClose">✕</button>
+        <img src="" alt="" />
+    </div>
+
+    <!-- ==================== BACK BUTTON ==================== -->
+    <div class="back-to-home">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/rafael.purisima.29" target="_blank" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rafael-purisima-316452318/" target="_blank" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="mailto:purisimarafael4@gmail.com" title="Email Me">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/> <polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rafael-purisima-316452318/" target="_blank" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/Rafael2023272" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+        </div>
+        <p>✦ &copy; 2026 Rafael Sicat Purisima ✦</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="RSPproject.js"></script>
+</body>
+</html>
