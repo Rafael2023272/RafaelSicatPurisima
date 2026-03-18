@@ -265,7 +265,7 @@ const projectData = [
     gradA: '#1b4124',
     gradB: '#61ff3a',
     screenshots: [
-            { src: 'Media/P13-img1.png', caption: 'Image 1' },
+            { src: 'Media/p13-img1.png', caption: 'Image 1' },
             { src: 'Media/p13-img2.png', caption: 'Image 2' },
             { src: 'Media/p13-img3.png', caption: 'Image 3' },
             { src: 'Media/p13-img4.png', caption: 'Image 4' },
